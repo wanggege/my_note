@@ -33,6 +33,8 @@ http://www.w3schools.com/
 
    git clone + 链接(end with .tg)
 
+   git pull    //进入克隆的文件夹内，执行后可更新克隆的仓库
+
 ## git basics
 
 1. first create a dir
@@ -79,7 +81,29 @@ http://www.w3schools.com/
 
  2.add SSH public keys
  
-   
+   cd /home/akaedu
+
+   mv .ssh/ akaedu-ssh   
+
+   ssh-keygen(一直enter)
+
+   cd .ssh(复制.ssh中的内容，注意不要复制空格)
+
+   在github网页中的SSH pubilc keys中add即可
+
+ 3.creat new repository
+
+   Dashboard->Create A Repository
+
+ 4.重复git basics中的7步(若已经有git跟踪的文件可不用执行本步骤)
+
+ 5.rename repository
+
+   git remote add origin + 仓库链接(end with .git)
+
+ 6.更新版本之后上传至仓库
+
+   git push -u origin master    //master is a part of repository
 
 ##about markdown
 
