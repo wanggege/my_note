@@ -6,6 +6,12 @@
 
      要粘贴必须进入插入模式
 
+## V 进入可视行模式后，可用类似windows下的删除粘贴等操作最文件进行删除粘贴等
+
+  1.先用鼠标选中要操作的第一行，然后进入可视行模式，用j移动选中要操作的区域，用dd,y,p等命令操作   
+
+  2.整体缩进几行代码：首先用可视行模式选中这几行，然后>(<相反方向缩进)
+
 # markdown
 
     http://happypeter.github.com/LGCB/book/toy_markdown.html
@@ -15,12 +21,18 @@
 http://www.w3schools.com/
 
 # git
+
 ## install
 
     sudo apt-get install git-core 
     sudo apt-get install tig
 
     git pull
+
+##clone others respository
+
+   git clone + 链接(end with .tg)
+
 ## git basics
 
 1. first create a dir
@@ -51,12 +63,23 @@ http://www.w3schools.com/
 
         git commit -a -m "my first version"   //-a跟踪所有修改-m修改信息，说明性内容，说明为什么修改等
 
+7. 上传新版本到仓库
+   
+        git remote add origin git@github.com:wanggege/my_note.git //给链接起别名
+
+        git push -u origin master        //master是仓库的以部分
+
+8.小结
+
+        每次修改完都要重复执行6和7的第二步
 
 #github
 
  1.login my github in github website   //https://github.com
 
+ 2.add SSH public keys
  
+   
 
 ##about markdown
 
@@ -79,6 +102,11 @@ http://www.w3schools.com/
 
    4.firefox my_note.html&
 
+##the reason why .swap file appearing
+   
+   1. open the same file twice sametime
+  
+   2. close the file unusual
 
 ## ref
 
