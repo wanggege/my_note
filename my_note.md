@@ -105,6 +105,15 @@ http://www.w3schools.com/
 
    git push -u origin master    //master is a part of repository
 
+ 7.git config    git配置
+
+   cd 要上传的文件
+
+   git config --global user.name "wanggege"
+  
+   git config --global user.email wanggege_bb@163.com
+
+
 ##about markdown
 
    markdown文本书写时一定要注意在内容行缩进和与标题之间的空行
