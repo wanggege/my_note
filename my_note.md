@@ -5,12 +5,25 @@
                 y(ank)             gg+G
 
      要粘贴必须进入插入模式
+##.vimrc
+
+    home下的创建本机的.vimrc（隐藏文件）文件，该文件是vim的配置文件
 
 ## V 进入可视行模式后，可用类似windows下的删除粘贴等操作最文件进行删除粘贴等
 
   1.先用鼠标选中要操作的第一行，然后进入可视行模式，用j移动选中要操作的区域，用dd,y,p等命令操作   
 
   2.整体缩进几行代码：首先用可视行模式选中这几行，然后>(<相反方向缩进)
+
+# multiple files 在vim的命令行模式下使用用于vim同时操作的文件(.c)
+
+      :ls #see buffers
+    
+      :bn #go to next buffer
+
+      :pn #go to previous buffer
+
+      :bd #delete a buffer
 
 # markdown
 
