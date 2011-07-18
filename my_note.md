@@ -119,21 +119,22 @@ http://www.w3schools.com/
       markdown文本书写时一定要注意在内容行缩进和与标题之间的空行
 
 #markdown using
-##download and install markdown
+ 
+1.download and install markdown
 
-   1.sudo apt-get install markdown
+      sudo apt-get install markdown
 
-##creat my .md directory
+ 2.creat my .md directory
 
-   2.vim my_note.md
+      vim my_note.md
 
-##change .md to .html
+ 3.change .md to .html
 
-   3.markdown my_note.md > my_note.html
+      markdown my_note.md > my_note.html
 
-##open .html directory
+ 4.open .html directory
 
-   4.firefox my_note.html&
+      firefox my_note.html&
 
 ##the reason why .swap file appearing
    
