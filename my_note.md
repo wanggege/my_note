@@ -81,42 +81,42 @@ http://www.w3schools.com/
 
  2.add SSH public keys
  
-   cd /home/akaedu
+      cd /home/akaedu
 
-   mv .ssh/ akaedu-ssh   
+      mv .ssh/ akaedu-ssh   
 
-   ssh-keygen(一直enter)
+      ssh-keygen(一直enter)
 
-   cd .ssh(复制.ssh中的内容，注意不要复制空格)
+      cd .ssh(复制.ssh中的内容，注意不要复制空格)
 
-   在github网页中的SSH pubilc keys中add即可
+      在github网页中的SSH pubilc keys中add即可
 
  3.creat new repository
 
-   Dashboard->Create A Repository
+      Dashboard->Create A Repository
 
  4.重复git basics中的7步(若已经有git跟踪的文件可不用执行本步骤)
 
  5.rename repository
 
-   git remote add origin + 仓库链接(end with .git)
+      git remote add origin + 仓库链接(end with .git)
 
  6.更新版本之后上传至仓库
 
-   git push -u origin master    //master is a part of repository
+      git push -u origin master    //master is a part of repository
 
  7.git config    git配置
 
-   cd 要上传的文件
+      cd 要上传的文件
 
-   git config --global user.name "wanggege"
+      git config --global user.name "wanggege"
   
-   git config --global user.email wanggege_bb@163.com
+      git config --global user.email wanggege_bb@163.com
 
 
 ##about markdown
 
-   markdown文本书写时一定要注意在内容行缩进和与标题之间的空行
+      markdown文本书写时一定要注意在内容行缩进和与标题之间的空行
 
 #markdown using
 ##download and install markdown
