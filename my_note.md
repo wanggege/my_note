@@ -1,3 +1,7 @@
+# c program
+
+     1.echo use printing value
+
 # vim
 
     Command = operator + number + motion
@@ -5,6 +9,19 @@
                 y(ank)             gg+G
 
      要粘贴必须进入插入模式
+
+## open another bash in vim
+   
+     1.先保存文件即:w
+
+     2.open bash :sh
+
+     3.close bash = ctrl d
+
+     4.退出vim  :q
+ 
+     这种情况下可步关闭vim的情况下编译源程序，方便源程序的修改 
+
 ##.vimrc
 
     home下的创建本机的.vimrc（隐藏文件）文件，该文件是vim的配置文件
