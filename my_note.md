@@ -1,7 +1,7 @@
 # c program
 
      1.echo use printing value
-
+     能成功吗
 # vim
 
     Command = operator + number + motion
