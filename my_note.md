@@ -103,7 +103,7 @@ http://www.w3schools.com/
 
 8.小结
 
-        每次修改完都要重复执行6和7的第二步
+        每次修改完都要重复执行6和7的第二步,每个文件或工程必须有自己私有的.git仓库，负责github历史就会混乱。
 
 #github
 
@@ -135,7 +135,7 @@ http://www.w3schools.com/
 
       git push -u origin master    //master is a part of repository
 
- 7.git config    git配置
+ 7.git config    git配置   //若是已经存在的仓库就不用执行这步
 
       cd 要上传的文件
 
