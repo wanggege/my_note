@@ -9,7 +9,7 @@
                 y(ank)             gg+G
 
      要粘贴必须进入插入模式
-
+## ctrl-n is used to aanvulling(补全)command
 ## open another bash in vim
    
      1.先保存文件即:w
@@ -31,6 +31,12 @@
   1.先用鼠标选中要操作的第一行，然后进入可视行模式，用j移动选中要操作的区域，用dd,y,p等命令操作   
 
   2.整体缩进几行代码：首先用可视行模式选中这几行，然后>(<相反方向缩进)
+
+##vim snipmate plugin install
+
+      unzip snipMate.zip -d ~/.vim     //解压缩.zip文件到～/.vim中
+
+      vim中的插件安装的实质是将插件复制到.vim中
 
 # multiple files 在vim的命令行模式下使用用于vim同时操作的文件(.c)
 
@@ -209,6 +215,10 @@ http://dict.youdao.com/
 # shell ( shell is a commandline interpreter)
 
 bash is a kind of shell. 
+
+##~.bashrc is the configation of bash.alias is used to rename command an so on.it can be used like this:
+
+    alias aaa='sudo apt-get install'
 
 ## filesystem tree
 
