@@ -30,9 +30,9 @@
 
     ctrl-t与ctrl-d在插入模式下不对齐
 
-   set dictionary=/usr/share/dirc/words 使用ubuntu自带辞典，使用时插入下ctrl-x-k
+    set dictionary=/usr/share/dirc/words 使用ubuntu自带辞典，使用时插入下ctrl-x-k
 
-   i_ctrl-x-f 补齐路径
+    i_ctrl-x-f 补齐路径
 
 ## V 进入可视行模式后，可用类似windows下的删除粘贴等操作最文件进行删除粘贴等
 
