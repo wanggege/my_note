@@ -119,6 +119,8 @@ http://www.w3schools.com/
 
         git commit -a -m "my first version"   //-a跟踪所有修改-m修改信息，说明性内容，说明为什么修改等
 
+       if want to write too many line messages,the editor must be vim,so in the file of .gitconfig must set:[core] editor = vim. next,when you make commit you should use the command "git commit -a",you can input the message.
+
 7. 上传新版本到仓库
    
         git remote add origin git@github.com:wanggege/my_note.git //给链接起别名
