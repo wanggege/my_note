@@ -80,7 +80,7 @@
 
      install it before uses it.
 
-     ctags file.c 
+     ctags file.c     //若应用大工程文件时，ctags main.c file.c file.h 
 
      之后生成tags文件，tags中存储函数的位置
 
