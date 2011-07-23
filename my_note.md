@@ -2,6 +2,7 @@
 
      1.echo use printing value
     
+
 # visit others machine in the Internet
 
  1.install ssh software 安装该软件的机器视为服务器，访问者为客户端,访问者不用安装也能访问
@@ -29,7 +30,8 @@
                 y(ank)             gg+G
 
      要粘贴必须进入插入模式
-## ctrl-n is used to aanvulling(补全)command
+## ctrl-n is used to aanvulling(补全)command,不仅是当前文件的内容还有包含的头文件的内容
+
 ## open another bash in vim
    
      1.先保存文件即:w
@@ -74,6 +76,15 @@
 
       vim中的插件安装的实质是将插件复制到.vim中
 
+##ctags software  查找函数的定义位置
+
+     install it before uses it.
+
+     ctags file.c 
+
+     之后生成tags文件，tags中存储函数的位置
+
+     在file.c中ctrl+]可从函数调用处跳至函数定义处，ctrl+t回到跳转前的位置
 ##tar
 
     tar.gz:tar zcvf dir.tar.gz dir
