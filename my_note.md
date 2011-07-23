@@ -2,6 +2,26 @@
 
      1.echo use printing value
     
+# visit others machine in the Internet
+
+ 1.install ssh software 安装该软件的机器视为服务器，访问者为客户端,访问者不用安装也能访问
+ 
+     sudo apt-get install openssh-server    //软件装好后会自动将访问口打开
+
+ 2.visit the server machine
+
+     SSH akaedu@192.168.1.15  //ssh 访问的用户名@访问的IP地址
+
+     退出访问：ctrl-d or exit
+ 
+ 3.cp file in server 不用访问主机在本机上直接操作
+
+     scp akaedu@192.168.1.15:~/hihi . //复制akaedu的~下的hihi到本机。.代表本机
+
+ 4.sudo service ssh stop  访问口关闭
+
+ 5.sudo service ssh start 访问口开启
+
 # vim
 
     Command = operator + number + motion
@@ -32,7 +52,15 @@
 
     set dictionary=/usr/share/dirc/words 使用ubuntu自带辞典，使用时插入下ctrl-x-k
 
-    i_ctrl-x-f 补齐路径
+     i_ctrl-x-f 补齐路径
+
+     map  用来将指令映射成简单操作或称为快捷键例如：map ,ss :set sepll<cr> ,单词检错。map <tab> :bn 将bn映射未tab   
+
+     imap jj <esc>    将Esc键映射为jj，即用来从插入模式返回至，命令行模式
+
+##words checking
+
+      :set spell    //单词错误检查(非.c文件)，.c文件只检查注释
 
 ## V 进入可视行模式后，可用类似windows下的删除粘贴等操作最文件进行删除粘贴等
 
@@ -262,6 +290,8 @@ bash is a kind of shell.
     man pwd # q to quit
 
     mkdir dir
+
+    cp copy file,cp -r directory  //递归复制目录
 
 ### path
 
