@@ -26,17 +26,35 @@
 
     home下的创建本机的.vimrc（隐藏文件）文件，该文件是vim的配置文件
 
+    set atuoindent 设置缩进set tabstop=4 设置tab键的长度set expandtab设置tab展开成空格set shiftwidth=4 可视行时shift-v+>展开成空格的个数
+
+    ctrl-t与ctrl-d在插入模式下不对齐
+
+   set dictionary=/usr/share/dirc/words 使用ubuntu自带辞典，使用时插入下ctrl-x-k
+
+   i_ctrl-x-f 补齐路径
+
 ## V 进入可视行模式后，可用类似windows下的删除粘贴等操作最文件进行删除粘贴等
 
   1.先用鼠标选中要操作的第一行，然后进入可视行模式，用j移动选中要操作的区域，用dd,y,p等命令操作   
 
   2.整体缩进几行代码：首先用可视行模式选中这几行，然后>(<相反方向缩进)
 
-##vim snipmate plugin install
+##vim snipmate plugin install        snipmate用来用于补全
 
       unzip snipMate.zip -d ~/.vim     //解压缩.zip文件到～/.vim中
 
       vim中的插件安装的实质是将插件复制到.vim中
+
+##tar
+
+    tar.gz:tar zcvf dir.tar.gz dir
+
+           tar zxvf dir.tar.gz
+
+    tar.bz:tar jcvf dir.tar.b2z dir
+
+           tar jxvf dir.tar.b2z
 
 # multiple files 在vim的命令行模式下使用用于vim同时操作的文件(.c)
 
@@ -149,6 +167,15 @@ http://www.w3schools.com/
   
       git config --global user.email wanggege_bb@163.com
 
+ 8. git reset --hard HEAD    //未做版本时撤销上次修改
+   
+    git reset --hard HEAD    //做好版本后撤销操作回到以前版本
+
+ 9.~/.gitconfig is the configation of git
+
+    alais is used to rename the command.eg,[alais] throw = reset --hard HEAD
+
+    thrown = reset --hard HEAD^     
 
 ##about markdown
 
