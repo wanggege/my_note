@@ -2,6 +2,7 @@
 
      1.echo use printing value
     
+     2.make执行成功的前提是当前文件夹中有makefile文件
 
 # visit others machine in the Internet
 
@@ -120,13 +121,23 @@ http://www.w3schools.com/
     sudo apt-get install git-core 
     sudo apt-get install tig
 
-    git pull
+## install xxx作用类似于tig，查找工程中的字符串并给出具体位置，e可跳转至具体位置
 
+    git clone https://github.com/happypeter/hen.git
+
+    sudo apt-get install libncurses5 libncurses5-dev  添加xxx所需库
+
+    make            // /hen/search/curse
+
+    sudo make install
+
+    eg. xxx times    //查找当前文件中的字符串times, e 可跳至具体位置处
+  
 ##clone others respository
 
-   git clone + 链接(end with .tg)
+    git clone + 链接(end with .tg)
 
-   git pull    //进入克隆的文件夹内，执行后可更新克隆的仓库
+    git pull    //进入克隆的文件夹内，执行后可更新克隆的仓库
 
 ## git basics
 
@@ -160,6 +171,8 @@ http://www.w3schools.com/
 
        if want to write too many line messages,the editor must be vim,so in the file of .gitconfig must set:[core] editor = vim. next,when you make commit you should use the command "git commit -a",you can input the message.
 
+       git commit -a -v   //参数-v可在做版本是看到修改的具体内容
+
 7. 上传新版本到仓库
    
         git remote add origin git@github.com:wanggege/my_note.git //给链接起别名
@@ -169,6 +182,20 @@ http://www.w3schools.com/
 8.小结
 
         每次修改完都要重复执行6和7的第二步,每个文件或工程必须有自己私有的.git仓库，负责github历史就会混乱。
+
+##git branch
+
+ 1.git checkout master               //跳转至master分支
+
+  git checkout 版本号               //跳转至commit号对应的历史版本状态
+
+ 2.git checkout 版本号 -b branchname  //给对应的版本号起名，并跳转该处
+
+ 3.git branch        //查看当前分支
+
+ 4.git status       //查看当前分支状态
+
+ 5.git branch -D branchname    //delete branch 
 
 #github
 
@@ -210,13 +237,13 @@ http://www.w3schools.com/
 
  8. git reset --hard HEAD    //未做版本时撤销上次修改
    
-    git reset --hard HEAD    //做好版本后撤销操作回到以前版本
+    git reset --hard HEAD^    //做好版本后未push时撤销操作回到以前版本
 
  9.~/.gitconfig is the configation of git
 
     alais is used to rename the command.eg,[alais] throw = reset --hard HEAD
 
-    thrown = reset --hard HEAD^     
+    throwh = reset --hard HEAD^     
 
 ##about markdown
 
@@ -283,6 +310,20 @@ http://dict.youdao.com/
 # shell ( shell is a commandline interpreter)
 
 bash is a kind of shell. 
+
+## where are you(locate command)
+
+     which filename
+
+     locate name   //find file by name
+
+     sudo updatedb  //更新locate数据库
+
+     find XXX|grep filename  //find file in directory by name file name
+
+     ps aux |grep firefox 查找进程firefox的具体信息，ps跟aux一起使用查找当前进程
+
+     kill 进程号   // 杀死进程    kill -9 进程号    //强行杀死进程
 
 ##~.bashrc is the configation of bash.alias is used to rename command an so on.it can be used like this:
 
