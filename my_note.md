@@ -31,7 +31,6 @@
                 y(ank)             gg+G
 
      要粘贴必须进入插入模式
-## ctrl-n is used to aanvulling(补全)command,不仅是当前文件的内容还有包含的头文件的内容
 
 ## open another bash in vim
    
@@ -71,11 +70,13 @@
 
   2.整体缩进几行代码：首先用可视行模式选中这几行，然后>(<相反方向缩进)
 
-##vim snipmate plugin install        snipmate用来用于补全
+##vim snipmate plugin install        snipmate用来用于补全函数for等(tab补全)
 
       unzip snipMate.zip -d ~/.vim     //解压缩.zip文件到～/.vim中
 
       vim中的插件安装的实质是将插件复制到.vim中
+
+## ctrl-n is used to aanvulling(补全)command,不仅是当前文件的内容还有包含的头文件的内容
 
 ##ctags software  查找函数的定义位置
 
@@ -86,6 +87,7 @@
      之后生成tags文件，tags中存储函数的位置
 
      在file.c中ctrl+]可从函数调用处跳至函数定义处，ctrl+t回到跳转前的位置
+
 ##tar
 
     tar.gz:tar zcvf dir.tar.gz dir
@@ -120,6 +122,11 @@ http://www.w3schools.com/
 
     sudo apt-get install git-core 
     sudo apt-get install tig
+
+## uninstall
+
+    sudo apt-get purge 软件         
+    sudo apt-get remove --purge 软件
 
 ## install xxx作用类似于tig，查找工程中的字符串并给出具体位置，e可跳转至具体位置
 
@@ -196,6 +203,8 @@ http://www.w3schools.com/
  4.git status       //查看当前分支状态
 
  5.git branch -D branchname    //delete branch 
+
+ 6.git checkout -b tmp   //master备份，也可用2备份
 
 #github
 
