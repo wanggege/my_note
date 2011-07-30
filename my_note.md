@@ -98,6 +98,12 @@
 
            tar jxvf dir.tar.b2z
 
+##rar file 解压缩   man unrar
+
+    sudo apt-get install unrar
+    
+    unrar e XXXX.rar
+
 # multiple files 在vim的命令行模式下使用用于vim同时操作的文件(.c)
 
       :ls #see buffers
