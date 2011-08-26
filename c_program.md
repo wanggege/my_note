@@ -73,4 +73,35 @@
 	clean:
 		rm -rf *.o
 		rm -rf main
-    
+
+#静态库和共享库的制作
+##静态库
+
+    将a.c b.c c.c 制作成名为mylib的静态库
+
+	1.gcc -c a.c b.c c.c
+
+	2.ar rs libmylib.a a.o b.o c.o
+
+	3.gcc main.c -L. -lmylib -Imylib -o main  //-L .表示在当前目录(即.)查找-lmylib告诉编译器要链接libmylib库，-I选项告诉编译器去哪里找头文件。注意，即使库文件就在当前目录，编译器默认也不会去找的，所以-L.选项不能少
+
+    4.gcc main.c libmylib.a //制作静态库后使用
+
+##共享库的制作
+
+    1.gcc -fPIC a.c b.c c.c  //-fPIC是生成与位置无关文件，静态库具有与位置无关性
+
+	2.gcc -shared -o libmylib.so a.o b.o c.o //生成共享库mylib
+
+	3.gcc main.c -g -L . -lmylib -I. -o main//参数作用同上
+
+	4.修改库路径
+
+	     <1> export LD_LIBRARY_PATH=pwd    pwd指库所在的绝对路径
+		 <2>sudo cp mylib.so /usr/lib   
+		 <3>sudo vim /etc/ld.so.conf
+		    添加库路径到该文件
+			sudo ldconfig -v 更新库路径并查看更新
+
+    参考资料
+file:///home/akaedu/%E6%A1%8C%E9%9D%A2/html-chunk/ch20s04.html
