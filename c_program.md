@@ -103,5 +103,3 @@
 		    添加库路径到该文件
 			sudo ldconfig -v 更新库路径并查看更新
 
-    参考资料
-file:///home/akaedu/%E6%A1%8C%E9%9D%A2/html-chunk/ch20s04.html
