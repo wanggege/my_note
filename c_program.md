@@ -29,3 +29,48 @@
 ##objdump -dXxs a.o >temp
 
     查看反汇编文件信息，>输出重定向
+
+#通用Makefile的书写
+
+    基本格式->目标：依赖
+	          (tab)命令
+
+    特殊符号：$@ -> 代表目标
+	          $^ -> 代表所有依赖
+			  $< -> 代表第一个依赖，一般一个.o只依赖与一个.c文件
+
+	定义变量:CC = gcc   
+	         CFLAGS = -Wall -g            编译时的编译选项
+			 LDFLAGS                      链接时的选项
+
+	变量的引用:$(CC)
+	           $(CFLAGS)
+
+	Makefile的隐式规则：  %.o:%.c 自动将所有的.c转换成对应的.o两者之间有依赖关系
+
+	Makefile的特殊函数：wildcard -> 提取当前文件下的所有.c文件
+	           src = (wildcard *.c)
+			            patsubst
+			   obj = $(patsubst %.c,%.o,$(src)) 将src提取的.c转换成对应的.o
+
+	注意：当前文件下不能有多余的与项目无关的.c文件
+
+##通用Makefile例子
+
+    src = $(wildcard *.c)            
+	obj = $(patsubst %.c,%.o,$(src)) 
+	CC = gcc
+	CFLAGS = -Wall -g
+	#LDFLAGS    
+
+	main:$(obj)
+	    $(CC) $^ -o $@
+	%.o:%.c
+		$(CC) $(CFLAGS) $< -c
+
+	.PHONY:clean
+
+	clean:
+		rm -rf *.o
+		rm -rf main
+    
